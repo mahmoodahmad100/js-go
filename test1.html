@@ -31,6 +31,25 @@
 			var second = document.getElementById('second');
 			addMsg(second, "Event: click");
 		});
+
+
+		<!-- functions as args -->
+		function func1(functionToBeHere){
+			return functionToBeHere();
+		}
+
+		function func2(){
+			var x = 500;
+			console.log(x);
+			return x;
+		}
+		
+		<!-- first method -->
+		func1(func2);
+
+		<!-- second method -->
+		func1(function(){console.log("hello world")});
+
 	</script>
 
 </body>
