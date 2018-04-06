@@ -1,2 +1,2 @@
 # js go
-* javascript repo
+* repo based on javascript
