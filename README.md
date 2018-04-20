@@ -1,3 +1,3 @@
 # js go
 * repo based on javascript
-soon
+* will be continued after a week 
