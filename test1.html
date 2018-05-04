@@ -74,6 +74,19 @@
 		
 		console.log(store);
 
+		<!-- arrow functions -->
+		var myName = name => 'hello ' +name;
+		console.log(myName('ali'));
+		
+		var user = (id, name) => id + " - " + name;
+		console.log(user(3, 'mohamed'));
+
+		var hello = () => {
+			var hi = 'hi';
+			var and = ' and ';
+			return hi + and + 'hello';
+		}
+		console.log(hello());
 	</script>
 
 </body>
