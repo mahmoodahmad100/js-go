@@ -50,6 +50,30 @@
 		<!-- second method -->
 		func1(function(){console.log("hello world")});
 
+
+
+		<!-- storing functions -->
+		var store = {
+			nextId: 1,
+			cashe: {},
+			add: function(fn){
+				if(!fn.id)
+				{
+					fn.id = this.nextId++;
+					this.cashe[fn.id] = fn;
+					return true;
+				}
+			}
+		}
+
+		function storeFn1(){};
+		function storeFn2(){};
+
+		store.add(storeFn1);
+		store.add(storeFn2);
+		
+		console.log(store);
+
 	</script>
 
 </body>
